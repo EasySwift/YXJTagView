@@ -1,43 +1,15 @@
-# YXJTagView
-及其强大的标签框架，不仅可以填充文字，任意视图都可以。
+//
+//  ViewController.swift
+//  TestYXJTagView
+//
+//  Created by yuanxiaojun on 16/7/2.
+//  Copyright © 2016年 袁晓钧. All rights reserved.
+//
 
+import UIKit
+import YXJTagView
 
-## Join Us 
-为了更好的完善EasySwift框架，希望更多对此框架有兴趣的朋友一起加入进来打造最好用最全面扩展最好的swift框架。
-[EasySwift](https://github.com/stubbornnessness/EasySwift)官方QQ群：<mark>**542916901**</mark>
-
-## Mark
-先更新Github上的项目，所以最新的项目一定在[Github](https://github.com/stubbornnessness)上。
-
-## Features
-* 及其强大的标签框架，不仅可以填充文字，任意视图都可以。
-
-### ScreenShot
-![image](https://github.com/stubbornnessness/YXJTagView/blob/master/TestYXJTagView/TestYXJTagView/demo1.gif)
-![image](https://github.com/stubbornnessness/YXJTagView/blob/master/TestYXJTagView/TestYXJTagView/demo2.gif)
-![image](https://github.com/stubbornnessness/YXJTagView/blob/master/TestYXJTagView/TestYXJTagView/demo3.gif)
-![image](https://github.com/stubbornnessness/YXJTagView/blob/master/TestYXJTagView/TestYXJTagView/demo4.gif)
-![image](https://github.com/stubbornnessness/YXJTagView/blob/master/TestYXJTagView/TestYXJTagView/demo5.gif)
-
-## System Requirements
-iOS 8.0 or above
-
-## Installation
-### As a CocoaPods Dependency
-Add the following to your Podfile:
-
-	pod 'YXJTagView'
-	
-## Version
-**V0.0.1** ---- 2016-7-3
-
-* 首次发版
-	
-## Example
-	import UIKit
-	import YXJTagView
-
-	class ViewController: UIViewController, YXJTagViewDelegate {
+class ViewController: UIViewController, YXJTagViewDelegate {
 
     private var tagView: YXJTagView!
 
@@ -56,19 +28,19 @@ Add the following to your Podfile:
         tagView.delegate = self
 
         // 场景一,纯文字
-	//        tagView.textData = ["aa", "bbb", "cccc", "ddddd", "eeeeee", "fffffff", "gggggggg"]
+//        tagView.textData = ["aa", "bbb", "cccc", "ddddd", "eeeeee", "fffffff", "gggggggg"]
 
         // 场景二,纯图片
-	//        tagView.imageData = [UIImage.init(named: "1")!, UIImage.init(named: "2")!, UIImage.init(named: "3")!, UIImage.init(named: "4")!, UIImage.init(named: "5")!]
+//        tagView.imageData = [UIImage.init(named: "1")!, UIImage.init(named: "2")!, UIImage.init(named: "3")!, UIImage.init(named: "4")!, UIImage.init(named: "5")!]
 
         // 场景三,纯图片加自定义图片大小
-	//        tagView.imageData = [UIImage.init(named: "1")!, UIImage.init(named: "2")!, UIImage.init(named: "3")!, UIImage.init(named: "4")!, UIImage.init(named: "5")!]
+//        tagView.imageData = [UIImage.init(named: "1")!, UIImage.init(named: "2")!, UIImage.init(named: "3")!, UIImage.init(named: "4")!, UIImage.init(named: "5")!]
 //        tagView.imageSize = CGSizeMake((self.view.frame.size.width - 60) / 2, (self.view.frame.size.width - 60) / 2 * (110 / 280))
 
         // 场景四,任意视图，颜色必须设置为可见颜色
-	//        tagView.viewData = viewData()
-	//        tagView.textBackgorund = UIColor.clearColor()
-	//        tagView.selecteColor = 	UIColor.whiteColor().colorWithAlphaComponent(0.6)
+//        tagView.viewData = viewData()
+//        tagView.textBackgorund = UIColor.clearColor()
+//        tagView.selecteColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
 
         // 场景五,任意视图，自定义大小，颜色必须设置为可见颜色
         tagView.viewData = viewData()
@@ -118,11 +90,5 @@ Add the following to your Podfile:
         super.didReceiveMemoryWarning()
     }
 
-	}
+}
 
-    
-## 极致框架
-* EasySwift是从2014年开始打造的贯穿整个Swift开发的整套解决方案，只为最简单，最高效，最全面，高扩展性，囊括最前沿的架构，思想在其中[EasySwift](https://github.com/stubbornnessness/EasySwift)
-
-## License
-YXJTagView is licensed under the Apache License, Version 2.0 License. For more information, please see the LICENSE file.
