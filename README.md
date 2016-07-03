@@ -63,7 +63,7 @@ Add the following to your Podfile:
 
         // 场景三,纯图片加自定义图片大小
 	//        tagView.imageData = [UIImage.init(named: "1")!, UIImage.init(named: "2")!, UIImage.init(named: "3")!, UIImage.init(named: "4")!, UIImage.init(named: "5")!]
-//        tagView.imageSize = CGSizeMake((self.view.frame.size.width - 60) / 2, (self.view.frame.size.width - 60) / 2 * (110 / 280))
+	//        tagView.imageSize = CGSizeMake((self.view.frame.size.width - 60) / 2, (self.view.frame.size.width - 60) / 2 * (110 / 280))
 
         // 场景四,任意视图，颜色必须设置为可见颜色
 	//        tagView.viewData = viewData()
