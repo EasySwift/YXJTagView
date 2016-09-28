@@ -11,7 +11,7 @@ import YXJTagView
 
 class ViewController: UIViewController, YXJTagViewDelegate {
 
-    private var tagView: YXJTagView!
+    fileprivate var tagView: YXJTagView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +19,9 @@ class ViewController: UIViewController, YXJTagViewDelegate {
         self.tagView = YXJTagView(frame: CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 20))
         self.view.addSubview(tagView)
         tagView.title = "标题"
-        tagView.textColor = UIColor.grayColor()
-        tagView.textBackgorund = UIColor.grayColor().colorWithAlphaComponent(0.6)
-        tagView.selecteColor = UIColor.redColor()
+        tagView.textColor = UIColor.gray
+        tagView.textBackgorund = UIColor.gray.withAlphaComponent(0.6)
+        tagView.selecteColor = UIColor.red
         tagView.horizontalSpace = 10.0
         tagView.verticalSpace = 5.0
         tagView.margin = 15.0
@@ -44,9 +44,9 @@ class ViewController: UIViewController, YXJTagViewDelegate {
 
         // 场景五,任意视图，自定义大小，颜色必须设置为可见颜色
         tagView.viewData = viewData()
-        tagView.viewSize = CGSizeMake((self.view.frame.size.width - 60) / 2, 80)
-        tagView.textBackgorund = UIColor.clearColor()
-        tagView.selecteColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
+        tagView.viewSize = CGSize(width: (self.view.frame.size.width - 60) / 2, height: 80)
+        tagView.textBackgorund = UIColor.clear
+        tagView.selecteColor = UIColor.white.withAlphaComponent(0.6)
 
         tagView.setupUI()
     }
@@ -55,7 +55,7 @@ class ViewController: UIViewController, YXJTagViewDelegate {
         var views = [UIView]()
 
         let v1 = UIView.init(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
-        v1.backgroundColor = UIColor.brownColor()
+        v1.backgroundColor = UIColor.brown
         views.append(v1)
 
         let img1 = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
@@ -63,7 +63,7 @@ class ViewController: UIViewController, YXJTagViewDelegate {
         v1.addSubview(img1)
 
         let v2 = UIView.init(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
-        v2.backgroundColor = UIColor.brownColor()
+        v2.backgroundColor = UIColor.brown
         views.append(v2)
 
         let img2 = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
@@ -71,7 +71,7 @@ class ViewController: UIViewController, YXJTagViewDelegate {
         v2.addSubview(img2)
 
         let v3 = UIView.init(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
-        v3.backgroundColor = UIColor.brownColor()
+        v3.backgroundColor = UIColor.brown
         views.append(v3)
 
         let img3 = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
@@ -81,7 +81,7 @@ class ViewController: UIViewController, YXJTagViewDelegate {
         return views
     }
 
-    func didClickView(text: String, index: Int) {
+    func didClickView(_ text: String, index: Int) {
         print("index \(index)")
         print("text \(text)")
     }

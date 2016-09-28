@@ -12,7 +12,7 @@
 ## Features
 * 及其强大的标签框架，不仅可以填充文字，任意视图都可以。
 
-### ScreenShot
+### ScreenShot 
 ![image](http://120.27.93.73/files/myPublicProject/YXJTagView1.gif)
 ![image](http://120.27.93.73/files/myPublicProject/YXJTagView2.gif)
 ![image](http://120.27.93.73/files/myPublicProject/YXJTagView3.gif)
